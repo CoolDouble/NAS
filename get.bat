@@ -23,6 +23,6 @@ echo Remove-Item 7z.exe -Force >> install.ps1
 echo Remove-Item SteamSetup.exe -Force >> install.ps1
 echo Move-Item -Path "$SteamExtractPath\*" -Destination $Folder -Force >> install.ps1
 echo Remove-Item $SteamExtractPath -Force >> install.ps1
-
+echo Start-Sleep -Seconds 3 >> install.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 del %USERPROFILE%\Desktop\Steam\install.ps1
