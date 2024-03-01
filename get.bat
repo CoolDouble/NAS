@@ -10,7 +10,6 @@ echo [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::Se
 echo $steamURL = "https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe" >> install.ps1
 echo $sevenURL = "https://github.com/CoolDouble/NAS/raw/main/7z.exe" >> install.ps1
 echo $sevenURL2 = "https://github.com/CoolDouble/NAS/raw/main/7z.dll" >> install.ps1
-echo $rand = Get-Random -Maximum 99999999 >> install.ps1
 echo $Folder = [Environment]::GetFolderPath("Desktop") + "\Steam" >> install.ps1
 echo New-Item -ItemType Directory -Force -Path $Folder >> install.ps1
 echo Set-Location -Path $Folder >> install.ps1
